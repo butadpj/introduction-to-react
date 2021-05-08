@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.books {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.books > * {
+    margin-bottom: 1em;
+}
+
+.books img {
+    cursor: pointer;
+}

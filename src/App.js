@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Book from "./components/Book"
+import "./AppDesign.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+      <div className="books">
+        <Book
+          imageSrc="https://images-na.ssl-images-amazon.com/images/I/51Tlm0GZTXL._AC_SX368_.jpg"
+          name="Atomic Habits"
+          author="James Clear"
+          description="This book will show your atomic habits"
+        />
+        <Book
+          imageSrc="https://images-na.ssl-images-amazon.com/images/I/51h-N7R8QHL._AC_SX368_.jpg"
+          name="Baby Animals"
+          author="James Clear"
+        />
+        <Book
+          imageSrc="https://images-na.ssl-images-amazon.com/images/I/51Ix49rxgtL._AC_SX368_.jpg"
+          name="Goodnight Moon"
+          author="James Clear"
+        />
+      </div>
+    );
 }
 
-export default App;
+
+export default App
